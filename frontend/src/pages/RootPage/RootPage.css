@@ -1,0 +1,87 @@
+@media screen and (max-width: 778px) {
+    
+}
+@media screen and (min-width: 778px) {
+    .LoginPage {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        z-index: 0;
+        background-color: white;
+    }
+    /* UNLOGIN STATE */
+    .InviteForm {
+        width: 40%;
+        height: 60%;
+        z-index: 10;
+        top: 20%;
+        left: 30%;
+        right: 30%;
+        bottom: 20%;
+        position: fixed;
+        display: block;
+        background: linear-gradient(to right, lightblue, lightgreen);
+        border-radius: 10px;
+        min-height: 312px;
+    }
+    .InviteForm:hover {
+        background: linear-gradient(to right, lightgreen, lightblue);
+    }
+    .InviteForm-title {
+        width: 80%;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+    .InviteForm-view {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 0%;
+        margin-bottom: 10%;
+        border-radius: 5px;
+        border-top-color: lightgreen;
+        border-left-color: lightgreen;
+        border-bottom-color: lightblue;
+        border-right-color: lightblue;
+        background-color: white;
+        text-align: center;
+    }
+    .InviteForm-view:hover {
+        border-top-color: lightblue;
+        border-left-color: lightblue;
+        border-bottom-color: lightgreen;
+        border-right-color: lightgreen;
+    }
+    .InviteForm-view:active {
+        background-color: aqua;
+    }
+    .InviteForm-view::before {
+        background-color: white;
+    }
+    .CheckBox {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    /* LOGIN STATE */
+    .MainPage {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        z-index: 0;
+        background-color: white;
+    }
+}

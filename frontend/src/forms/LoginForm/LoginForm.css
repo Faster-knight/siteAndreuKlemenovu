@@ -1,0 +1,51 @@
+@media screen and (max-width: 778px) {
+    
+}
+@media screen and (min-width: 778px) {
+    .LoginForm {
+        display: block;
+        width: 90%;
+        height: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .LoginForm-input {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-color: rgba(0, 0, 0, 0);
+        text-align: center;
+    }
+    .LoginForm-button {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        border-radius: 5px;
+        border-top-color: lightgreen;
+        border-left-color: lightgreen;
+        border-bottom-color: lightblue;
+        border-right-color: lightblue;
+        background-color: white;
+        text-align: center;
+    }
+    .LoginForm-button:hover {
+        border-top-color: lightblue;
+        border-left-color: lightblue;
+        border-bottom-color: lightgreen;
+        border-right-color: lightgreen;
+    }
+    .LoginForm-button:active {
+        background-color: aqua;
+    }
+    .LoginForm-button::before {
+        background-color: white;
+    }
+}

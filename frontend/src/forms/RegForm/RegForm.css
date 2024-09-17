@@ -1,0 +1,38 @@
+@media screen and (max-width: 778px) {
+    
+}
+@media screen and (min-width: 778px) {
+    .RegForm {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 50%;
+        margin-bottom: 10%;
+    }
+    .RegForm button {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        border-radius: 5px;
+        border-top-color: lightgreen;
+        border-left-color: lightgreen;
+        border-bottom-color: lightblue;
+        border-right-color: lightblue;
+        background-color: white;
+        text-align: center;
+    }
+    .RegForm button:hover {
+        border-top-color: lightblue;
+        border-left-color: lightblue;
+        border-bottom-color: lightgreen;
+        border-right-color: lightgreen;
+    }
+    .RegForm button:active {
+        background-color: aqua;
+    }
+    .RegForm button::before {
+        background-color: white;
+    }
+}

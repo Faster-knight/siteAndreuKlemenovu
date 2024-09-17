@@ -1,0 +1,106 @@
+@media screen and (max-width: 778px) {
+    .App-header-title {
+        display: none;
+    }
+    .App-header-control {
+        width: 100%;
+        height: 10vh;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to right, lightblue, lightgreen);
+        z-index: 10;
+    }
+    .App-header-control-item {
+        display: none;
+    }
+    .App-header-contol-item0-mobile,
+    .App-header-contol-item1-mobile {
+        display: block;
+        margin: auto;
+        background-color: white;
+        border-radius: 0.5rem;
+    }
+}
+@media screen and (min-width: 778px) {
+    .App-header {
+        width: 100%;
+        height: 20%;
+        z-index: 0;
+        position: fixed;
+        display: block;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+    }
+    .App-header-title {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        z-index: 0;
+    }
+    .App-header-title-item0 {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+    }
+    .App-header-title-item0-img {
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .App-header-title-item0-text {
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
+    .App-header-title-item1 {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+    }
+    .App-header-title-item1 p {
+        text-align: center;
+        width: 60%;
+        height: 50%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .App-header-title-item1 button {
+        width: 40%;
+        height: 50%;
+        background-color: white;
+        border-radius: 5px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .App-header-control {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to right, lightblue, lightgreen);
+        z-index: 10;
+    }
+    .App-header-control-item {
+        margin: auto;
+    }
+    .App-header-control-item button {
+        background-color: white;
+        border-radius: 5px;
+    }
+    .App-header-control-item button:active {
+        background-color: aqua;
+    }
+    .App-header-contol-item0-mobile,
+    .App-header-contol-item1-mobile {
+        display: none;
+    }
+}

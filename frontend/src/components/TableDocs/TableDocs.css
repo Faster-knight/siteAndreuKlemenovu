@@ -1,0 +1,41 @@
+@media screen and (max-width: 778px) {
+    
+}
+@media screen and (min-width: 778px) {
+    .TableDocs {
+        position: fixed;
+        width: 100%;
+        z-index: 0;
+        top: 20%;
+        height: 80%;
+        left: 0%;
+        display: block;
+    }
+    .TableDocs-title {
+        width: 100%;
+        text-align: center;
+    }
+    .TableDocs-title-update-div {
+        display: flex;
+        align-items: center;
+    }
+    .TableDocs-title-update {
+        background-color: white;
+        border-radius: 5px;
+        margin: auto;
+    }
+    .TableDocs-title-update:active {
+        background-color: aqua;
+    }
+    .TableDocs-content {
+        display: flex;
+        align-items: center;
+    }
+    .TableDocs-content-item0,
+    .TableDocs-content-item1,
+    .TableDocs-content-item2,
+    .TableDocs-content-item3,
+    .TableDocs-content-item4 {
+        margin: auto;
+    }
+}

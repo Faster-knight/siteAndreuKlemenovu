@@ -1,0 +1,82 @@
+import { createContext, useState } from 'react'
+import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import RootPage from './pages/RootPage/RootPage';
+import PrivateAuthSwitch from './components/PrivateAuthSwitch/PrivateAuthSwitch';
+import PrivateAdmin from './components/PrivateAdmin/PrivateAdmin';
+
+export enum RoleSet {
+  user = "User",
+  guest = "Guest",
+  admin = "Admin"
+}
+
+export interface User {
+  id: number,
+  username: string,
+  email?: string,
+  role: RoleSet,
+  rule: string
+}
+
+export interface AuthContextValue {
+  user: User | null;
+  login: (name: string, pswd: string) => void;
+  unlogin: () => void;
+}
+
+export const AuthContext = createContext<AuthContextValue>({
+  user: null,
+  login: () => {},
+  unlogin: () => {}
+});
+
+function getRandomString(length: number = 32) {
+  let outString: string = '';
+  let inOptions: string = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  for (let i = 0; i < length; i++) {
+    outString += inOptions.charAt(Math.floor(Math.random() * inOptions.length));
+  }
+  return outString;
+}
+
+function App() {
+  const [user, setUser] = useState<User | null>(null);
+  const [ssesion, setSsesion] = useState<string>("");
+  const login = (name: string, pswd: string) => {
+    // TODO create a fetch request in backend and read jwt token or user data
+    // TODO create a new hash string ssesion
+    setSsesion(getRandomString());
+    setUser({id: -1, username: "Temp", email: undefined, role: RoleSet.guest, rule: "guest"});
+  }
+  const unlogin = () => {
+    // TODO create a tetch request in backend to unlogin state
+    setSsesion("");
+    setUser(null);
+  }
+  return (
+    <div className='App'>
+      <BrowserRouter>
+        <AuthContext.Provider value={{user, login, unlogin}}>
+          {
+            <Routes>
+              <Route index path="/" element={<RootPage />}/>
+              <Route element={<PrivateAuthSwitch />}>
+                <Route path='/my' />
+                <Route path='/all' />
+                <Route path='/table' />
+                <Route path='/peoples' />
+                <Route path='/' />
+                <Route element={<PrivateAdmin />}>
+                 <Route path="/admin" />
+                </Route>
+              </Route>
+            </Routes>
+          }
+        </AuthContext.Provider>
+      </BrowserRouter>
+    </div>
+  )
+}
+
+export default App;
