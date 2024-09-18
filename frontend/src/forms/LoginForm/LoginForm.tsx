@@ -27,8 +27,8 @@ function LoginForm() {
     }
     return (
         <div className='LoginForm'>
-            <input placeholder='Ваш логин' onChange={(event) => changeInputHandler(event, 0)} className='LoginForm-input'/>
-            <input placeholder='Ваш пароль' onChange={(event) => changeInputHandler(event, 1)} className='LoginForm-input' type='password'/>
+            <input placeholder='Логин' onChange={(event) => changeInputHandler(event, 0)} className='LoginForm-input'/>
+            <input placeholder='Пароль' onChange={(event) => changeInputHandler(event, 1)} className='LoginForm-input' type='password'/>
             <CheckBox changeHandler={(event) => setSaveMe(!saveMe)} textView={"Запомнить меня"} />
             <button onClick={clickInputHandler} className='LoginForm-button'>Войти</button>
         </div>

@@ -1,4 +1,23 @@
-.CheckBox {
+/*.CheckBox {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    width: 40%;
+    height: 22%;
+}*/
+/* Переписал на статик и абсолют значения */
+.CheckBox {
+    position: static;
+    width: 10%;
+    height: 10%;
+}
+.CheckBox-input{
+    position: absolute;
+    top: 41%;
+    left: 31%;
+}
+.CheckBox-text{
+    position: absolute; 
+    left: 35%;
+    bottom: 51.3%;
 }

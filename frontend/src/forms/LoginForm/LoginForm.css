@@ -1,6 +1,7 @@
 @media screen and (max-width: 778px) {
     
 }
+
 @media screen and (min-width: 778px) {
     .LoginForm {
         display: block;
@@ -12,23 +13,23 @@
         margin-bottom: 5%;
     }
     .LoginForm-input {
-        width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
+        width: 40%; /* Уменьшил размер кнопок*/
+        margin-left: 30%;
+        margin-right: 30%;
         background-color: white;
         border-radius: 5px;
-        margin-top: 2%;
-        margin-bottom: 2%;
+        margin-bottom: 3%; /* Уменьшил отступы между кнопками, убрать margin-top */
         border-color: rgba(0, 0, 0, 0);
-        text-align: center;
+        text-align: left; /* Переместил текст влево */
     }
     .LoginForm-button {
-        width: 40%;
+        width: 42%;
+        height: 15%;
         margin-left: 30%;
         margin-right: 30%;
         margin-top: 0%;
         margin-bottom: 0%;
-        border-radius: 5px;
+        border-radius: 10px;
         border-top-color: lightgreen;
         border-left-color: lightgreen;
         border-bottom-color: lightblue;
