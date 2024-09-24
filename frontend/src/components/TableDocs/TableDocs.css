@@ -28,14 +28,41 @@
         background-color: aqua;
     }
     .TableDocs-content {
+        display: block;
+        height: 80%;
+    }
+    .TableDocs-content-item0 {
+        display: flex;
+        height: 30%;
+        align-items: center;
+        background: linear-gradient(to right, lightgreen, lightblue);
+    }
+    .TableDocs-content-item0-item0,
+    .TableDocs-content-item0-item1,
+    .TableDocs-content-item0-item2,
+    .TableDocs-content-item0-item3 {
+        margin: auto;
+    }
+    .TableDocs-content-item1 {
+        height: 70%;
+        display: block;
+    }
+    .TableDocs-content-item1-task {
+        width: 90%;
+        height: fit-content;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        position: static;
         display: flex;
         align-items: center;
+        border-width: 10px;
+        border-color: black;
+        background: linear-gradient(to right, lightgreen, rgb(10, 157, 215));
     }
-    .TableDocs-content-item0,
-    .TableDocs-content-item1,
-    .TableDocs-content-item2,
-    .TableDocs-content-item3,
-    .TableDocs-content-item4 {
+    .TableDocs-content-item1-task p {
         margin: auto;
+        text-justify: auto;
     }
 }
