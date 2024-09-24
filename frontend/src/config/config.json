@@ -1,0 +1,12 @@
+{
+  "port": 3000,
+  "mode": "dev",
+  "proxy": {
+    "http": "http://localhost:8080/api",
+    "https": "https://localhost:8080/api"
+  },
+  "titleSite": {
+    "dev": "Site dev mode",
+    "prod": "Site"
+  }
+}

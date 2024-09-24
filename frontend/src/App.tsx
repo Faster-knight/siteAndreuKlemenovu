@@ -4,6 +4,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import RootPage from './pages/RootPage/RootPage';
 import PrivateAuthSwitch from './components/PrivateAuthSwitch/PrivateAuthSwitch';
 import PrivateAdmin from './components/PrivateAdmin/PrivateAdmin';
+import MyCardsPage from './pages/MyCardsPage/MyCardsPage';
+import AllCardsPage from './pages/AllCardsPage/AllCardsPage';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
 
 export enum RoleSet {
   user = "User",
@@ -62,11 +65,10 @@ function App() {
             <Routes>
               <Route index path="/" element={<RootPage />}/>
               <Route element={<PrivateAuthSwitch />}>
-                <Route path='/my' />
-                <Route path='/all' />
-                <Route path='/table' />
+                <Route path='/my' element={<MyCardsPage />}/>
+                <Route path='/all' element={<AllCardsPage />}/>
+                <Route path='/profile' element={<ProfilePage />}/>
                 <Route path='/peoples' />
-                <Route path='/' />
                 <Route element={<PrivateAdmin />}>
                  <Route path="/admin" />
                 </Route>
