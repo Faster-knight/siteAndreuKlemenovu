@@ -17,9 +17,14 @@ export enum RoleSet {
 export interface User {
   id: number,
   username: string,
+  login: string,
+  male: string,
+  age: number,
+  companyposition: string,
+  companyrole: string,
   email?: string,
   role: RoleSet,
-  rule: string
+  rule: string,
 }
 
 export interface AuthContextValue {
@@ -50,7 +55,7 @@ function App() {
     // TODO create a fetch request in backend and read jwt token or user data
     // TODO create a new hash string ssesion
     setSsesion(getRandomString());
-    setUser({id: -1, username: "Temp", email: undefined, role: RoleSet.guest, rule: "guest"});
+    setUser({id: 1, username: "Иван И.", login: "IVANOV_1995", male: "М", age: 29, companyposition: "программист", companyrole: "администратор", email: undefined, role: RoleSet.guest, rule: "guest"});
   }
   const unlogin = () => {
     // TODO create a tetch request in backend to unlogin state

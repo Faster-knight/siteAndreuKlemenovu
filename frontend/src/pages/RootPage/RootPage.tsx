@@ -4,7 +4,7 @@ import { AuthContext, AuthContextValue } from '../../App';
 import LoginForm from '../../forms/LoginForm/LoginForm';
 import RegForm from '../../forms/RegForm/RegForm';
 import HeaderComponent from '../../components/Header/HeaderComponent';
-import TableDocs from '../../components/TableDocs/TableDocs';
+import ProfilePage from '../ProfilePage/ProfilePage';
 
 function RootPage() {
     const context = useContext<AuthContextValue>(AuthContext);
@@ -29,7 +29,7 @@ function RootPage() {
         ) : (
             <div className='MainPage'>
                 <HeaderComponent />
-                <TableDocs />
+                <ProfilePage />
             </div>
         )
     )
