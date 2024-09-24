@@ -1,4 +1,104 @@
-@media screen and (max-width: 778px) {
+/* Блок для адаптива для мобильных устройств (пока не готов, позже допишу) */
+@media screen and (max-width: 1024px){
+    /* Блок для работы с верхней строкой */
+    .App-header-title {
+        background-color: #f6faff;
+        width: 100%;
+        height: 7.5%;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+
+    }
+    /* Блок для работы с лого и надписью кабинета */
+    .App-header-title-item0 {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        left: 25%;
+    }
+    /* Блок для работы с лого */
+    .App-header-title-item0-img {
+        width: 50%;
+        height: 75%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /* Блок для работы с надписью */
+    .App-header-title-item0-text {
+        width: 50%;
+        height: 100%;
+        text-align: left;
+        margin-left: 2%;
+        margin-top: 7%;
+        font-size: 12px;
+    }
+    /* Блок для работы с кнопкой */
+    .App-header-title-item1 {
+        position: absolute;
+        width: 20%;
+        height: 50%;
+        margin: auto;
+        left: 90%;
+        top: 35%;
+    }
+    /* Блок для работы с кнопкой */
+    .App-header-title-item1 button {
+        width: 100%;
+        height: 80%;
+        background-color: #66c1ff;
+        border-radius: 20px;
+        font-size: 11px;
+        position: absolute;
+        right: 60%;
+    }
+    /* Блок для работы с header */
+    .App-header-control {
+        width: 100%;
+        height: 8%;
+        position: absolute;
+        top: 11.5%;
+        display: flex;
+        justify-content: space-evenly;
+        background: #d6eeff;
+    }
+    .App-header-contol-item0-mobile,
+    .App-header-contol-item1-mobile {
+        display: none;
+    }
+    .App-header-control-item1 button,  
+    .App-header-control-item2 button,
+    .App-header-control-item3 button,
+    .App-header-control-item4 button,
+    .App-header-control-item5 button{
+        background-color: #d6eeff;
+        border-radius: 0;
+        height: 100%;
+        border: none;
+        font-size: 11px;
+    }
+    .App-header-control-item1 button:hover,  
+    .App-header-control-item2 button:hover,
+    .App-header-control-item3 button:hover,
+    .App-header-control-item4 button:hover,
+    .App-header-control-item5 button:hover{
+        background-color: #66c1ff;
+    }*/
+    .App-header-control-item {
+        display: none;
+    }
+    .App-header-contol-item0-mobile,
+    .App-header-contol-item1-mobile {
+        display: block;
+        margin: auto;
+        background-color: white;
+        border-radius: 0.5rem;
+    }
+}
+
+/*@media screen and (max-width: 778px) {
     .App-header-title {
         display: none;
     }
@@ -23,84 +123,104 @@
         background-color: white;
         border-radius: 0.5rem;
     }
-}
+}*/
+
 @media screen and (min-width: 778px) {
-    .App-header {
+    /*.App-header {
         width: 100%;
         height: 20%;
-        z-index: 0;
         position: fixed;
-        display: block;
         top: 0%;
         left: 0%;
         right: 0%;
-    }
-    .App-header-title {
-        width: 100%;
-        height: 50%;
         display: flex;
-        align-items: center;
-        background-color: white;
-        z-index: 0;
+        justify-content: space-between;
+    }*/
+    /* Блок для работы с верхней строкой */
+    .App-header-title {
+        background-color: #f6faff;
+        width: 100%;
+        height: 11.5%;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
     }
+    /* Блок для работы с лого и надписью кабинета */
     .App-header-title-item0 {
         width: 20%;
         height: 100%;
         display: flex;
-        margin: auto;
+        position: absolute;
+        left: 25%;
     }
+    /* Блок для работы с лого */
     .App-header-title-item0-img {
         width: 50%;
-        height: 100%;
+        height: 75%;
         background-size: cover;
         background-repeat: no-repeat;
+        margin-top: 3.5%;
     }
+    /* Блок для работы с надписью */
     .App-header-title-item0-text {
         width: 50%;
         height: 100%;
-        text-align: center;
+        text-align: left;
+        margin-left: 2%;
+        margin-top: 7%;
     }
+    /* Блок для работы с кнопкой */
     .App-header-title-item1 {
+        position: absolute;
         width: 20%;
         height: 50%;
-        display: flex;
         margin: auto;
         left: 90%;
+        top: 35%;
     }
-    .App-header-title-item1 p {
-        text-align: center;
-        width: 60%;
-        height: 50%;
-        
-    }
+    /* Блок для работы с кнопкой */
     .App-header-title-item1 button {
-        width: 40%;
-        height: 50%;
-        background-color: white;
-        border-radius: 5px;
-        margin-top: auto;
-        margin-bottom: auto;
+        width: 45%;
+        height: 70%;
+        background-color: #66c1ff;
+        border-radius: 20px;
     }
+    /* Блок для работы с header */
     .App-header-control {
         width: 100%;
-        height: 50%;
+        height: 8%;
+        position: absolute;
+        top: 11.5%;
         display: flex;
-        align-items: center;
-        background: linear-gradient(to right, lightblue, lightgreen);
-        z-index: 10;
-    }
-    .App-header-control-item {
-        margin: auto;
-    }
-    .App-header-control-item button {
-        background-color: white;
-        border-radius: 5px;
-    }
-    .App-header-control-item button:active {
-        background-color: aqua;
+        justify-content: space-evenly;
+        background: #d6eeff;
     }
     .App-header-contol-item0-mobile,
     .App-header-contol-item1-mobile {
         display: none;
     }
+    .App-header-control-item1 button,  
+    .App-header-control-item2 button,
+    .App-header-control-item3 button,
+    .App-header-control-item4 button,
+    .App-header-control-item5 button{
+        background-color: #d6eeff;
+        border-radius: 0;
+        height: 100%;
+        border: none;
+    }
+    .App-header-control-item1 button:hover,  
+    .App-header-control-item2 button:hover,
+    .App-header-control-item3 button:hover,
+    .App-header-control-item4 button:hover,
+    .App-header-control-item5 button:hover{
+        background-color: #66c1ff;
+    }
 }
+
+/*
+Коды для цветов
+#f6faff - еле видный белый
+#d6eeff - еле голубой
+#66c1ff - сильно синий
+*/
