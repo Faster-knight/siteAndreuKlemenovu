@@ -32,12 +32,14 @@ export interface AuthContextValue {
   user: User | null;
   login: (name: string, pswd: string) => void;
   unlogin: () => void;
+  changeimg: () => void
 }
 
 export const AuthContext = createContext<AuthContextValue>({
   user: null,
   login: () => {},
-  unlogin: () => {}
+  unlogin: () => {},
+  changeimg: () => {}
 });
 
 function getRandomString(length: number = 32) {
@@ -63,10 +65,13 @@ function App() {
     setSsesion("");
     setUser(null);
   }
+  const changeimg = () => {
+    
+  }
   return (
     <div className='App'>
       <BrowserRouter>
-        <AuthContext.Provider value={{user, login, unlogin}}>
+        <AuthContext.Provider value={{user, login, unlogin, changeimg}}>
           {
             <Routes>
               <Route index path="/" element={<RootPage />}/>
