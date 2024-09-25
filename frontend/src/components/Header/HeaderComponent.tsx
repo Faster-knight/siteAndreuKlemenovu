@@ -19,27 +19,27 @@ function HeaderComponent() {
                         <div className='App-header-title'>
                             <div className='App-header-title-item0'>
                                 <img src={logo} alt='logo.png' className='App-header-title-item0-img' />
-                                <p className='App-header-title-item0-text'>Личный кабинет сотрудника</p>
+                                <p className='App-header-title-item0-text'> Личный кабинет сотрудника </p>
                             </div>
                             <div className='App-header-title-item1'>
-                                <button onClick={() => unlogin()}>{user.username}|Выход</button>
+                                <button onClick={() => unlogin()}> {user.username}|Выход </button>
                             </div>
                         </div>
                         <div className='App-header-control'>
                             <Link to="/my" className='App-header-control-item1'>
-                                <button>Мои карточки</button>
+                                <button> Мои карточки </button>
                             </Link>
                             <Link to="/all" className='App-header-control-item2'>
-                                <button>Все карточки</button>
+                                <button> Все карточки </button>
                             </Link>
                             <Link to="/" className='App-header-control-item3'>
-                                <button>Таблица отчетности</button>
+                                <button> Таблица отчетности </button>
                             </Link>
                             <Link to="/peoples" className='App-header-control-item4'>
-                                <button>Участники</button>
+                                <button> Участники </button>
                             </Link>
                             <Link to="/profile" className='App-header-control-item5'>
-                                <button>Мой профиль</button>
+                                <button> Мой профиль </button>
                             </Link>
                         </div>
                     </header>

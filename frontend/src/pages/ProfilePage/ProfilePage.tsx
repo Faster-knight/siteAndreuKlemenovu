@@ -13,14 +13,14 @@ function ProfilePage() {
                     <button> Редактировать </button>
                 </div>
                 <div className='App-profile-body-left-div'>
-                <p>{user ? user.username: "error"}</p>
-                <p>Логин: {user ? user.login: "error"}</p>
-                <p>Пол: {user ? user.male: "error"} Возраст: {user ? user.age: "error"} лет</p>
+                <p> {user ? user.FIO: "error"} </p>
+                <p> Логин: {user ? user.login: "error"} </p>
+                <p> Пол: {user ? user.male: "error"} Возраст: {user ? user.age: "error"} лет </p>
                 </div>
                 <div className='App-profile-body-div-line'></div>
                 <div className='App-profile-body-right-div'>
-                <p>Должность: {user ? user.companyposition: "error"}</p>
-                <p>Роль: {user ? user.companyrole: "error"}</p>
+                <p> Должность: {user ? user.companyposition: "error"} </p>
+                <p> Роль: {user ? user.companyrole: "error"} </p>
                 </div>
             </div>
         </div>
