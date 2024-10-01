@@ -17,8 +17,8 @@ public class UserDTO {
     private int age;
     private String role;
     private String pol;
-    @Lob
-    private byte[] image;
+    //@Lob
+    //private byte[] image;
     @OneToMany(
             mappedBy = "user",
             cascade = CascadeType.ALL,
