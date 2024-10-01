@@ -1,8 +1,6 @@
 package org.example.dto;
 
 import jakarta.persistence.*;
-import org.example.app.UserPol;
-import org.example.app.UserRole;
 
 import java.util.ArrayList;
 
@@ -17,8 +15,8 @@ public class UserDTO {
     private String name;
     private String login;
     private int age;
-    private UserRole role;
-    private UserPol pol;
+    private String role;
+    private String pol;
     @Lob
     private byte[] image;
     @OneToMany(

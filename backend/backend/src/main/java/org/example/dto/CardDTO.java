@@ -1,7 +1,6 @@
 package org.example.dto;
 
 import jakarta.persistence.*;
-import org.example.app.StatusCard;
 
 import java.util.ArrayList;
 
@@ -14,12 +13,12 @@ public class CardDTO {
     @JoinColumn(name = "idSezione")
     private SezioneDTO section;
     private String nameCard;
-    private StatusCard statusCard;
+    private String statusCard;
     private String commentCard;
     public Long getIdCard() {return idCard;}
     public SezioneDTO getSection() {return section;}
     public String getNameCard() {return nameCard;}
-    public StatusCard getStatusCard() {return statusCard;}
+    public String getStatusCard() {return statusCard;}
     public String getCommentCard() {return commentCard;}
     public ArrayList<TaskDTO> getTasksCard() {return tasksCard;}
     @OneToMany(

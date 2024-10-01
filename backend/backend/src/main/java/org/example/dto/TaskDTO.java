@@ -1,8 +1,6 @@
 package org.example.dto;
 
 import jakarta.persistence.*;
-import org.example.app.StatusCard;
-import org.springframework.data.auditing.DateTimeProvider;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -16,13 +14,13 @@ public class TaskDTO {
     @JoinColumn(name = "idCard")
     private CardDTO card;
     private String nameTask;
-    private StatusCard status;
+    private String status;
     private LocalDate data;
     private LocalTime time;
     public Long getId() {return idTask;}
     public CardDTO getCard() {return card;}
     public String getNameTask() {return nameTask;}
-    public StatusCard getStatus() {return status;}
+    public String getStatus() {return status;}
     public LocalDate getData() {return data;}
     public LocalTime getTime() {return time;}
 }
