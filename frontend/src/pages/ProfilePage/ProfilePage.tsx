@@ -1,12 +1,12 @@
-import { useContext, useState } from 'react';
 import './ProfilePage.css';
-import { AuthContext, AuthContextValue } from '../../App';
+import { UseAuth } from '../../app/AuthContext/AuthContext';
+import HeaderComponent from '../../components/Header/HeaderComponent';
 
 function ProfilePage() {
-    const {user} = useContext<AuthContextValue>(AuthContext);
+    const {user} = UseAuth();
     return (
         <div className="ProfilePage">
-            <header className='App-header'></header>
+            <HeaderComponent />
             <div className='App-profile-body'>
                 <div className='App-profile-body-img'>
                     <div className='App-profile-body-img-item0'></div>

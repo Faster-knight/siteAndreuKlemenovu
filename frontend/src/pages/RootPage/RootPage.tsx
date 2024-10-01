@@ -1,16 +1,13 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import './RootPage.css';
-import { AuthContext, AuthContextValue } from '../../App';
 import LoginForm from '../../forms/LoginForm/LoginForm';
 import RegForm from '../../forms/RegForm/RegForm';
 import HeaderComponent from '../../components/Header/HeaderComponent';
-import ProfilePage from '../ProfilePage/ProfilePage';
+import FooterComponent from '../../components/Footer/FooterComponent';
 
 function RootPage() {
-    const context = useContext<AuthContextValue>(AuthContext);
     const [view, setView] = useState<boolean>(false);
     return (
-        context.user === null ? (
             <div className='LoginPage'>
                 {!view ?
                 <div className='InviteForm'>
@@ -25,13 +22,8 @@ function RootPage() {
                     <RegForm />
                     <button className='InviteForm-view' onClick={() => setView(false)}>Логин</button>
                 </div>}
+                <FooterComponent />
             </div>
-        ) : (
-            <div className='MainPage'>
-                <HeaderComponent />
-                <ProfilePage />
-            </div>
-        )
     )
 }
 

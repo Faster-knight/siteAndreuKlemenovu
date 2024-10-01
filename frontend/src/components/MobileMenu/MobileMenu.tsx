@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import './MobileMenu.css';
-import { useContext } from 'react';
-import { AuthContext, AuthContextValue } from '../../App';
+import { UseAuth } from '../../app/AuthContext/AuthContext';
 
 type Props = {
     view: boolean,
@@ -9,12 +8,12 @@ type Props = {
 }
 
 function MobileMenu({view, setView}: Props) {
-    const {unlogin} = useContext<AuthContextValue>(AuthContext);
+    const {user, unlogin} = UseAuth();
     return (
         <div className={view ? "MobileMenu-show" : "MobileMenu-hide"}>
             <button className='MobileMenu-view' onClick={() => setView(false)}>Х</button>
             <div className='MobileMenu-content'>
-                <Link to="/">
+                <Link to="/table">
                     <button onClick={() => setView(false)}>Таблица отчетности</button>
                 </Link>
                 <Link to="/my">
@@ -29,7 +28,7 @@ function MobileMenu({view, setView}: Props) {
                 <Link to="/people">
                     <button onClick={() => setView(false)}>Участники</button>
                 </Link>
-                <button onClick={() => unlogin()}>Выход</button>
+                <button onClick={() => unlogin({user: user})}>Выход</button>
             </div>
         </div>
     )

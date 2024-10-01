@@ -1,11 +1,11 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import CheckBox from '../../components/CheckBox/CheckBox';
 import './LoginForm.css';
-import { AuthContext } from '../../App';
+import { UseAuth } from '../../app/AuthContext/AuthContext';
 
 function LoginForm() {
     const [saveMe, setSaveMe] = useState<boolean>(false);
-    const {login} = useContext(AuthContext);
+    const {login} = UseAuth();
     const [input, setInput] = useState(
         {
             name: "",
@@ -23,7 +23,7 @@ function LoginForm() {
         }
     }
     const clickInputHandler = () => {
-        login(input.name, input.pswd);
+        login({name: "Trofim Postnikov", temp: "", });
     }
     return (
         <div className='LoginForm'>
