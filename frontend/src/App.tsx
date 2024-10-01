@@ -8,6 +8,7 @@ import ProfilePage from './pages/ProfilePage/ProfilePage';
 import PeoplesPage from './pages/PeoplesPage/PeoplesPage';
 import TablePage from './pages/TablePage/TablePage';
 import AuthProvider from './app/AuthProvider/AuthProvider';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <AuthProvider>
           <Routes>
               <Route index path="/" element={<RootPage />}/>
+              <Route path='/error' element={<ErrorPage />} />
               <Route element={<PrivateAuthSwitch />}>
                 <Route path='/my' element={<MyCardsPage />}/>
                 <Route path='/all' element={<AllCardsPage />}/>

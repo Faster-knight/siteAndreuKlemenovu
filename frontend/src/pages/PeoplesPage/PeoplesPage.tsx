@@ -7,6 +7,11 @@ function PeoplesPage() {
     return (
         <div className="PeoplesPage">
             <HeaderComponent />
+            <div className="PeoplesPage">
+                {
+                    
+                }
+            </div>
         </div>
     )
 }
