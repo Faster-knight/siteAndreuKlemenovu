@@ -22,7 +22,7 @@ function HeaderComponent() {
                                 <p className='App-header-title-item0-text'> Личный кабинет сотрудника </p>
                             </div>
                             <div className='App-header-title-item1'>
-                                <button onClick={() => unlogin(user)}> {user.username}|Выход </button>
+                                <button onClick={() => unlogin(user)}> Выход </button>
                             </div>
                         </div>
                         <div className='App-header-control'>
@@ -53,8 +53,3 @@ function HeaderComponent() {
 }
 
 export default HeaderComponent;
-/*
-<button className='App-header-contol-item0-mobile' onClick={() => setMobile_nav_view(!mobile_nav_view)}>Меню</button>
-                            <button className='App-header-contol-item1-mobile' onClick={() => unlogin()}>Выход</button>
-                            <MobileMenu view={mobile_nav_view} setView={setMobile_nav_view}/>
-*/

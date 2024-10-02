@@ -41,7 +41,7 @@
 
 .App-profile-body-div-line {
     width: 0.5%;
-    height: 16%;
+    height: 20%;
     border-left: 3px solid black;
     position: absolute;
     left: 56%;
@@ -57,6 +57,7 @@
 }
 
 .App-profile-body-right-div {
+    padding-top: 0.5%;
     width: 7%;
     height: 20%;
     font-size: 18px;

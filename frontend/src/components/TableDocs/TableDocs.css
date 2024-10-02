@@ -2,51 +2,134 @@
     
 }
 @media screen and (min-width: 778px) {
+    
     .TableDocs {
         position: fixed;
         width: 100%;
-        z-index: 0;
         top: 20%;
         height: 80%;
         left: 0%;
         display: block;
     }
+    
     .TableDocs-title {
         width: 100%;
         text-align: center;
+        height: 20%;
     }
+    
+    .TableDocs-title button {
+        width: 10%;
+        position: absolute;
+        right: 9%;
+        background-color: #9accfe;
+        border: 2px solid #0153a5;
+        border-radius: 20px;
+    }
+    
+    .TableDocs-select-panel-title-FIO {
+        position: absolute;
+        width: 20%;
+        height: 3%;
+        padding: 0.2% 0 0.2% 0;
+        margin: 0;
+        background-color: #9accfe;
+        font-size: 16px;
+        text-align: center;
+        border: 2px solid #0153a5;
+    }
+
+    .TableDocs-select-panel-title-CardTitle {
+        position: absolute;
+        left: 20%;
+        width: 20%;
+        height: 3%;
+        padding: 0.2% 0 0.2% 0;
+        margin: 0;
+        background-color: #9accfe;
+        font-size: 16px;
+        text-align: center;
+        border: 2px solid #0153a5;
+    }
+
+    .TableDocs-select-panel-title-Task {
+        position: absolute;
+        left: 40%;
+        width: 20%;
+        height: 3%;
+        padding: 0.2% 0 0.2% 0;
+        margin: 0;
+        background-color: #9accfe;
+        font-size: 16px;
+        text-align: center;
+        border: 2px solid #0153a5;
+    }
+
+    .TableDocs-select-panel-title-Date {
+        position: absolute;
+        left: 60%;
+        width: 20%;
+        height: 3%;
+        padding: 0.2% 0 0.2% 0;
+        margin: 0;
+        background-color: #9accfe;
+        font-size: 16px;
+        text-align: center;
+        border: 2px solid #0153a5;
+    }
+
+    .TableDocs-select-panel-title-WorkingHours {
+        position: absolute;
+        right: 0;
+        width: 20%;
+        height: 3%;
+        padding: 0.2% 0 0.2% 0;
+        margin: 0;
+        background-color: #9accfe;
+        font-size: 16px;
+        text-align: center;
+        border: 2px solid #0153a5;
+    }
+
     .TableDocs-title-update-div {
         display: flex;
         align-items: center;
     }
+    
     .TableDocs-title-update {
         background-color: white;
         border-radius: 5px;
         margin: auto;
     }
+    
     .TableDocs-title-update:active {
         background-color: aqua;
     }
+    
     .TableDocs-content {
         display: block;
         height: 80%;
     }
+    
     .TableDocs-content-item0 {
         display: flex;
         height: 30%;
         align-items: center;
         background: linear-gradient(to right, lightgreen, lightblue);
     }
+    
     .TableDocs-content-item0-item0,
     .TableDocs-content-item0-item1,
     .TableDocs-content-item0-item2,
     .TableDocs-content-item0-item3 {
         margin: auto;
     }
+    
     .TableDocs-content-item1 {
         height: 70%;
         display: block;
     }
+    
     .TableDocs-content-item1-task {
         width: 90%;
         height: fit-content;
@@ -61,8 +144,22 @@
         border-color: black;
         background: linear-gradient(to right, lightgreen, rgb(10, 157, 215));
     }
+    
     .TableDocs-content-item1-task p {
         margin: auto;
         text-justify: auto;
     }
 }
+
+/*
+Коды для цветов
+1. f0f8ff - еле видный белый
+2. 9accfe - голубой
+3. c4e2ff - еле видный голубой
+4. 0153a5 - синий
+5. ffd6ce - телесный
+6. ffaec9 - розовый
+7. e2efb6 - болотистый
+8. b6d744 - салатовый
+9. 7f7f7f - серый
+*/

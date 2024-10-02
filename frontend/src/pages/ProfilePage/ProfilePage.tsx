@@ -15,7 +15,8 @@ function ProfilePage() {
                 <div className='App-profile-body-left-div'>
                 <p> {user ? user.FIO: "error"} </p>
                 <p> Логин: {user ? user.login: "error"} </p>
-                <p> Пол: {user ? user.male: "error"} Возраст: {user ? user.age: "error"} лет </p>
+                <p> Возраст: {user ? user.age: "error"} лет </p>
+                <p> Пол: {user ? user.male: "error"}</p>
                 </div>
                 <div className='App-profile-body-div-line'></div>
                 <div className='App-profile-body-right-div'>

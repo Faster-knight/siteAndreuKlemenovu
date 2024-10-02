@@ -7,13 +7,13 @@ function TableDocs() {
     return (
         <div className="TableDocs">
             <div className="TableDocs-select-panel">
-                <p className="TableDocs-title">Отметки по задачам контрагента</p>
+                <p className="TableDocs-title">Отметки по задачам контрагента <button> Выгрузить данные </button></p>
                 <div className="TableDocs-select-panel-title">
-                    <p>ФИО</p>
-                    <p>Задача</p>
-                    <p>Результат</p>
-                    <p>Дата работы</p>
-                    <p>Трудозатраты (часы)</p>
+                    <p className='TableDocs-select-panel-title-FIO'> ФИО </p>
+                    <p className='TableDocs-select-panel-title-CardTitle'> Название карточки </p>
+                    <p className='TableDocs-select-panel-title-Task'> Задача </p>
+                    <p className='TableDocs-select-panel-title-Date'> Дата работы </p>
+                    <p className='TableDocs-select-panel-title-WorkingHours'> Трудозатраты (часы) </p>
                 </div>
                 <div className="TableDocs-select-panel-control">
                     <ComboBox list={[{id: 1, name: "Не выбрано"}]} />

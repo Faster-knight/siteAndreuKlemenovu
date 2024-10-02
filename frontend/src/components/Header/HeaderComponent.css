@@ -1,5 +1,6 @@
-/* Блок для адаптива для мобильных устройств (пока не готов, позже допишу) */
-@media screen and (max-width: 1024px){
+/* Настройки сайта для больших мониторов */
+@media screen and (min-width: 1024px) {
+    
     /* Блок для работы с верхней строкой */
     .App-header-title {
         background-color: #f6faff;
@@ -11,6 +12,7 @@
         position: absolute;
 
     }
+    
     /* Блок для работы с лого и надписью кабинета */
     .App-header-title-item0 {
         width: 20%;
@@ -19,13 +21,15 @@
         position: absolute;
         left: 25%;
     }
+    
     /* Блок для работы с лого */
     .App-header-title-item0-img {
-        width: 50%;
+        width: 100%;
         height: 75%;
         background-size: cover;
         background-repeat: no-repeat;
     }
+    
     /* Блок для работы с надписью */
     .App-header-title-item0-text {
         width: 50%;
@@ -33,8 +37,9 @@
         text-align: left;
         margin-left: 2%;
         margin-top: 7%;
-        font-size: 12px;
+        font-size: 18px;
     }
+    
     /* Блок для работы с кнопкой */
     .App-header-title-item1 {
         position: absolute;
@@ -44,16 +49,18 @@
         left: 90%;
         top: 35%;
     }
+    
     /* Блок для работы с кнопкой */
     .App-header-title-item1 button {
         width: 100%;
         height: 80%;
-        background-color: #66c1ff;
+        background-color: #c4e2ff;
         border-radius: 20px;
-        font-size: 11px;
+        font-size: 16px;
         position: absolute;
         right: 60%;
     }
+    
     /* Блок для работы с header */
     .App-header-control {
         width: 100%;
@@ -64,10 +71,12 @@
         justify-content: space-evenly;
         background: #d6eeff;
     }
+    
     .App-header-contol-item0-mobile,
     .App-header-contol-item1-mobile {
         display: none;
     }
+    
     .App-header-control-item1 button,  
     .App-header-control-item2 button,
     .App-header-control-item3 button,
@@ -77,18 +86,21 @@
         border-radius: 0;
         height: 100%;
         border: none;
-        font-size: 11px;
+        font-size: 18px;
     }
+    
     .App-header-control-item1 button:hover,  
     .App-header-control-item2 button:hover,
     .App-header-control-item3 button:hover,
     .App-header-control-item4 button:hover,
     .App-header-control-item5 button:hover{
         background-color: #66c1ff;
-    }*/
+    }
+    
     .App-header-control-item {
         display: none;
     }
+    
     .App-header-contol-item0-mobile,
     .App-header-contol-item1-mobile {
         display: block;
@@ -98,44 +110,8 @@
     }
 }
 
-/*@media screen and (max-width: 778px) {
-    .App-header-title {
-        display: none;
-    }
-    .App-header-control {
-        width: 100%;
-        height: 10vh;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-        display: flex;
-        align-items: center;
-        background: linear-gradient(to right, lightblue, lightgreen);
-        z-index: 10;
-    }
-    .App-header-control-item {
-        display: none;
-    }
-    .App-header-contol-item0-mobile,
-    .App-header-contol-item1-mobile {
-        display: block;
-        margin: auto;
-        background-color: white;
-        border-radius: 0.5rem;
-    }
-}*/
-
+/* Изначальные настройки для сайта: ноутбуки*/
 @media screen and (min-width: 778px) {
-    /*.App-header {
-        width: 100%;
-        height: 20%;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-        right: 0%;
-        display: flex;
-        justify-content: space-between;
-    }*/
     
     /* Блок для работы с верхней строкой */
     .App-header-title {
@@ -158,7 +134,7 @@
     
     /* Блок для работы с лого */
     .App-header-title-item0-img {
-        width: 50%;
+        width: 25%;
         height: 75%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -188,8 +164,12 @@
     .App-header-title-item1 button {
         width: 45%;
         height: 70%;
-        background-color: #66c1ee;
+        background-color: #9accfe;
         border-radius: 20px;
+    }
+
+    .App-header-title-item1 button:hover {
+        background-color: #0153a5;
     }
     
     /* Блок для работы с header */
@@ -217,8 +197,9 @@
         border-radius: 0;
         height: 100%;
         border: none;
-        font-size: 15px;
+        font-size: 16px;
     }
+
     .App-header-control-item1 button:hover,  
     .App-header-control-item2 button:hover,
     .App-header-control-item3 button:hover,
