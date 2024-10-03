@@ -3,12 +3,13 @@ import './RegForm.css';
 function RegForm() {
     return (
         <div className='RegForm'>
-            <p>
-                Регистрация недоступна в текущей версии.
-                Нажмите на кнопку что бы скопировать почту
-                технической поддержки сайта и вас зарегестрировали.
-            </p>
-            <button>Скопировать почту</button>
+            <input placeholder='Фамилия' className='RegForm-Surname'/>
+            <input placeholder='Имя' className='RegForm-Name'/>
+            <input placeholder='Отчество' className='RegForm-MiddleName'/>
+            <input placeholder='Логин' className='RegForm-Login'/>
+            <input placeholder='Пароль' className='RegForm-Password'/>
+            <input placeholder='Повторите пароль' className='RegForm-ConfirmPassword'/>
+            <button className='RegForm-button'> Зарегистрироваться </button>
         </div>
     )
 }
